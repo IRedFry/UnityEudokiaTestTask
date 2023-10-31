@@ -2919,7 +2919,8 @@ MonoBehaviour:
   bonuses:
   - {fileID: 7057607385216436150, guid: 4b940ad1f134d8847b533847a1b418ed, type: 3}
   - {fileID: 2823436494029747093, guid: 3c9b5ca480a5d6f43bc3a046e986de4a, type: 3}
-  spawnRate: 2
+  - {fileID: 7897903768282686297, guid: 4ecfda9d34fda434ca0e46a68e29e78b, type: 3}
+  spawnRate: 5
   spawnRadius: 10
 --- !u!4 &317860951
 Transform:

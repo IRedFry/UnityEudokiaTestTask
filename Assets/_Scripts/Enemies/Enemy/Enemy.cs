@@ -12,6 +12,21 @@ public class Enemy : MonoBehaviour
     public AudioClip deathSound;
     public AudioSource audioSource;
 
+    private void OnEnable()
+    {
+        Events.UseBonus += OnUseBonus;
+    }
+
+    private void OnDisable()
+    {
+        Events.UseBonus -= OnUseBonus;
+    }
+
+    private void OnUseBonus(BonusSpawner.BonusType type)
+    {
+        if (type == BonusSpawner.BonusType.DestroyAll)
+            ReceiveDamage(int.MaxValue);
+    }
 
     public void SetEnemyBase(EnemyBase eBase)
     {

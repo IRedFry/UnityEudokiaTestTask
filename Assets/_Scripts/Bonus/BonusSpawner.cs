@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BonusSpawner : MonoBehaviour
 {
-    public enum BonusType { FreezeSpawn = 0, FastReload };
+    public enum BonusType { FreezeSpawn = 0, FastReload, DestroyAll };
 
     [SerializeField]
     private List<GameObject> bonuses;
